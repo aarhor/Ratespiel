@@ -59,64 +59,64 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auswahl.cs">
+    <Compile Include="Formen\Auswahl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Auswahl.Designer.cs">
+    <Compile Include="Formen\Auswahl.Designer.cs">
       <DependentUpon>Auswahl.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Highscore.cs">
+    <Compile Include="Formen\Highscore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Highscore.Designer.cs">
+    <Compile Include="Formen\Highscore.Designer.cs">
       <DependentUpon>Highscore.cs</DependentUpon>
     </Compile>
     <Compile Include="Highscore_Files\Dateihandling.cs" />
     <Compile Include="Highscore_Files\Highscore_Klasse.cs" />
     <Compile Include="Highscore_Files\Trennzeichen.cs" />
-    <Compile Include="Hinweis.cs">
+    <Compile Include="Formen\Hinweis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hinweis.Designer.cs">
+    <Compile Include="Formen\Hinweis.Designer.cs">
       <DependentUpon>Hinweis.cs</DependentUpon>
     </Compile>
     <Compile Include="Klassen\Bereich_raten.cs" />
     <Compile Include="Klassen\Windows_Version.cs" />
-    <Compile Include="MainForm_Multiplayer.cs">
+    <Compile Include="Formen\MainForm_Multiplayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm_Multiplayer.Designer.cs">
+    <Compile Include="Formen\MainForm_Multiplayer.Designer.cs">
       <DependentUpon>MainForm_Multiplayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Statistiken.cs">
+    <Compile Include="Formen\Statistiken.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistiken.Designer.cs">
+    <Compile Include="Formen\Statistiken.Designer.cs">
       <DependentUpon>Statistiken.cs</DependentUpon>
     </Compile>
-    <Compile Include="Zahlenbereich_raten.cs">
+    <Compile Include="Formen\Zahlenbereich_raten.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Zahlenbereich_raten.Designer.cs">
+    <Compile Include="Formen\Zahlenbereich_raten.Designer.cs">
       <DependentUpon>Zahlenbereich_raten.cs</DependentUpon>
     </Compile>
-    <Compile Include="Über.cs">
+    <Compile Include="Formen\Über.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Über.Designer.cs">
+    <Compile Include="Formen\Über.Designer.cs">
       <DependentUpon>Über.cs</DependentUpon>
     </Compile>
-    <Compile Include="Changelog.cs">
+    <Compile Include="Formen\Changelog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Changelog.Designer.cs">
+    <Compile Include="Formen\Changelog.Designer.cs">
       <DependentUpon>Changelog.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Formen\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Formen\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -140,31 +140,31 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Auswahl.resx">
+    <EmbeddedResource Include="Formen\Auswahl.resx">
       <DependentUpon>Auswahl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Changelog.resx">
+    <EmbeddedResource Include="Formen\Changelog.resx">
       <DependentUpon>Changelog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Highscore.resx">
+    <EmbeddedResource Include="Formen\Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hinweis.resx">
+    <EmbeddedResource Include="Formen\Hinweis.resx">
       <DependentUpon>Hinweis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm_Multiplayer.resx">
+    <EmbeddedResource Include="Formen\MainForm_Multiplayer.resx">
       <DependentUpon>MainForm_Multiplayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Statistiken.resx">
+    <EmbeddedResource Include="Formen\Statistiken.resx">
       <DependentUpon>Statistiken.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Zahlenbereich_raten.resx">
+    <EmbeddedResource Include="Formen\Zahlenbereich_raten.resx">
       <DependentUpon>Zahlenbereich_raten.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Über.resx">
+    <EmbeddedResource Include="Formen\Über.resx">
       <DependentUpon>Über.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Formen\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

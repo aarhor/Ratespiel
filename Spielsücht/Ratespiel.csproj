@@ -6,8 +6,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Spielsücht</RootNamespace>
-    <AssemblyName>Spielsücht</AssemblyName>
+    <RootNamespace>Ratespiel</RootNamespace>
+    <AssemblyName>Ratespiel</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <NoWin32Manifest>False</NoWin32Manifest>

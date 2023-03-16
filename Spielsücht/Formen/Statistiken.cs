@@ -16,17 +16,17 @@ namespace Spielsücht
             InitializeComponent();
         }
 
-        double Aktuelles_Guthaben = Properties.Settings.Default.Aktueller_Kontostand;
-        double Gewonnen = Properties.Settings.Default.Gewonnen;
-        double Verloren = Properties.Settings.Default.Verloren;
-        double Spiel_beendet = Properties.Settings.Default.Spiel_beendet;
+        double Aktuelles_Guthaben = Ratespiel.Properties.Settings.Default.Aktueller_Kontostand;
+        double Gewonnen = Ratespiel.Properties.Settings.Default.Gewonnen;
+        double Verloren = Ratespiel.Properties.Settings.Default.Verloren;
+        double Spiel_beendet = Ratespiel.Properties.Settings.Default.Spiel_beendet;
 
         public void Daten()
         {
-            double Aktuelles_Guthaben = Properties.Settings.Default.Aktueller_Kontostand;
-            double Gewonnen = Properties.Settings.Default.Gewonnen;
-            double Verloren = Properties.Settings.Default.Verloren;
-            double Spiel_beendet = Properties.Settings.Default.Spiel_beendet;
+            double Aktuelles_Guthaben = Ratespiel.Properties.Settings.Default.Aktueller_Kontostand;
+            double Gewonnen = Ratespiel.Properties.Settings.Default.Gewonnen;
+            double Verloren = Ratespiel.Properties.Settings.Default.Verloren;
+            double Spiel_beendet = Ratespiel.Properties.Settings.Default.Spiel_beendet;
             double GV = Math.Round(Gewonnen / Verloren, 3);
 
             lbl_Guthaben.Text = "Aktuelles Guthaben: " + string.Format("{0:c}", Aktuelles_Guthaben);
@@ -39,20 +39,20 @@ namespace Spielsücht
         void Reset()
         {
             Aktuelles_Guthaben = 1000;
-            Properties.Settings.Default.Aktueller_Kontostand = Aktuelles_Guthaben;
-            Properties.Settings.Default.Save();
+            Ratespiel.Properties.Settings.Default.Aktueller_Kontostand = Aktuelles_Guthaben;
+            Ratespiel.Properties.Settings.Default.Save();
 
             Gewonnen = 0;
-            Properties.Settings.Default.Gewonnen = Gewonnen;
-            Properties.Settings.Default.Save();
+            Ratespiel.Properties.Settings.Default.Gewonnen = Gewonnen;
+            Ratespiel.Properties.Settings.Default.Save();
 
             Verloren = 0;
-            Properties.Settings.Default.Verloren = Verloren;
-            Properties.Settings.Default.Save();
+            Ratespiel.Properties.Settings.Default.Verloren = Verloren;
+            Ratespiel.Properties.Settings.Default.Save();
 
             Spiel_beendet = 0;
-            Properties.Settings.Default.Spiel_beendet = Spiel_beendet;
-            Properties.Settings.Default.Save();
+            Ratespiel.Properties.Settings.Default.Spiel_beendet = Spiel_beendet;
+            Ratespiel.Properties.Settings.Default.Save();
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace Spielsücht
 
         private void Statistiken_Load(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.time_an)
+            if (Ratespiel.Properties.Settings.Default.time_an)
                 timer1.Enabled = true;
             else
                 timer1.Enabled = false;

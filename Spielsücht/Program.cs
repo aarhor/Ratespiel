@@ -10,7 +10,7 @@ namespace Spielsücht
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (Properties.Settings.Default.Hinweis_OK == false)
+            if (Ratespiel.Properties.Settings.Default.Hinweis_OK == false)
                 Application.Run(new Hinweis());
             else
                 Application.Run(new Auswahl());

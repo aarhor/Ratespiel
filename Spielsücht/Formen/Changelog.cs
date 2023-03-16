@@ -13,7 +13,7 @@ namespace Spielsücht
 
         private void ChangelogLoad(object sender, EventArgs e)
         {
-            string Pfad = Properties.Resources.Changelog.ToString();
+            string Pfad = Ratespiel.Properties.Resources.Changelog.ToString();
             richTextBox_Changelog.Text = Pfad;
         }
     }

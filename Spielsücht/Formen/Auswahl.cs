@@ -60,7 +60,7 @@ namespace Spielsücht
 
         private void Auswahl_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Properties.Settings.Default.Name;
+            textBox1.Text = Ratespiel.Properties.Settings.Default.Name;
             csvDateiName = "Highscore_Spiel1.csv";
             if (Windows_Version == "Windows XP")
                 AppDataPfad = Application.UserAppDataPath;
@@ -69,7 +69,7 @@ namespace Spielsücht
             csvDateiInfo = new FileInfo(AppDataPfad + @"\" + csvDateiName);
             int Spielnummer = 0;
 
-            if (Properties.Settings.Default.time_an)
+            if (Ratespiel.Properties.Settings.Default.time_an)
                 timer1.Enabled = true;
             else
                 timer1.Enabled = false;
@@ -103,7 +103,7 @@ namespace Spielsücht
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            double Aktuelles_Guthaben = Properties.Settings.Default.Aktueller_Kontostand;
+            double Aktuelles_Guthaben = Ratespiel.Properties.Settings.Default.Aktueller_Kontostand;
             Text = "Auswahl - Wetten dass du verlierst? | " + string.Format("{0:c}", Aktuelles_Guthaben);
         }
 
@@ -115,8 +115,8 @@ namespace Spielsücht
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Name = textBox1.Text;
-            Properties.Settings.Default.Save();
+            Ratespiel.Properties.Settings.Default.Name = textBox1.Text;
+            Ratespiel.Properties.Settings.Default.Save();
         }
     }
 }

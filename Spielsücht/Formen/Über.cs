@@ -13,7 +13,7 @@ namespace Spielsücht
 
         private void Über_Load(object sender, EventArgs e)
         {
-            label3.Text = Properties.Settings.Default.Version;
+            label3.Text = Ratespiel.Properties.Settings.Default.Version;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -29,8 +29,8 @@ namespace Spielsücht
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.By_Ueber = true;
-            Properties.Settings.Default.Save();
+            Ratespiel.Properties.Settings.Default.By_Ueber = true;
+            Ratespiel.Properties.Settings.Default.Save();
 
             Hinweis FormHinweis = new Hinweis();
             FormHinweis.Show();

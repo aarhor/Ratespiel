@@ -66,8 +66,8 @@ namespace Spielsücht
                         lbl_Zahl.Text = "Zahl (1):";
                         txtBox_Zahl_Nutzer.Clear();
                         lbl_Godzilla.Visible = false;
-                        Properties.Settings.Default.Gewonnen++;
-                        Properties.Settings.Default.Save();
+                        Ratespiel.Properties.Settings.Default.Gewonnen++;
+                        Ratespiel.Properties.Settings.Default.Save();
                     }
                     else
                     {
@@ -78,8 +78,8 @@ namespace Spielsücht
                             Zahl_Spieler1 = 0;
                             lbl_Zahl.Text = "Zahl (1):";
                             txtBox_Zahl_Nutzer.Clear();
-                            Properties.Settings.Default.Verloren++;
-                            Properties.Settings.Default.Save();
+                            Ratespiel.Properties.Settings.Default.Verloren++;
+                            Ratespiel.Properties.Settings.Default.Save();
                         }
                     }
                     break;

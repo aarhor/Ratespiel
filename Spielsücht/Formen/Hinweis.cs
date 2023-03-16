@@ -19,7 +19,7 @@ namespace Spielsücht
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.By_Ueber == false)
+            if (Ratespiel.Properties.Settings.Default.By_Ueber == false)
             {
                 Auswahl FormAuswahl = new Auswahl();
                 FormAuswahl.Show();
@@ -27,8 +27,8 @@ namespace Spielsücht
             }
             else
             {
-                Properties.Settings.Default.By_Ueber = false;
-                Properties.Settings.Default.Save();
+                Ratespiel.Properties.Settings.Default.By_Ueber = false;
+                Ratespiel.Properties.Settings.Default.Save();
                 Hide();
             }
         }
@@ -37,23 +37,23 @@ namespace Spielsücht
         {
             if (checkBox1.Checked)
             {
-                Properties.Settings.Default.Hinweis_OK = true;
-                Properties.Settings.Default.Save();
+                Ratespiel.Properties.Settings.Default.Hinweis_OK = true;
+                Ratespiel.Properties.Settings.Default.Save();
                 button1.Enabled = true;
             }
             else
             {
-                Properties.Settings.Default.Hinweis_OK = false;
-                Properties.Settings.Default.Save();
+                Ratespiel.Properties.Settings.Default.Hinweis_OK = false;
+                Ratespiel.Properties.Settings.Default.Save();
                 button1.Enabled = false;
             }
         }
 
         private void Hinweis_Load(object sender, EventArgs e)
         {
-            richTextBox1.Text = Properties.Resources.Hinweis;
+            richTextBox1.Text = Ratespiel.Properties.Resources.Hinweis;
 
-            if (Properties.Settings.Default.Hinweis_OK)
+            if (Ratespiel.Properties.Settings.Default.Hinweis_OK)
             {
                 checkBox1.Checked = true;
                 button1.Enabled = true;
@@ -67,7 +67,7 @@ namespace Spielsücht
 
         private void Hinweis_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Properties.Settings.Default.Hinweis_OK == false)
+            if (Ratespiel.Properties.Settings.Default.Hinweis_OK == false)
             {
                 MessageBox.Show("Bitte lese dir den Hinweis durch.");
                 e.Cancel = true;
